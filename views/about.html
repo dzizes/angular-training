@@ -1,0 +1,19 @@
+	<!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+
+        <h1> {{ test }} </h1>
+      </div>
+
+      <div class="container">  
+        <table class="table responsive">
+        	<tr ui-sref='user({id:row.userId})' ng-repeat="row in data">
+	        	<td>{{ $index }}</td>
+	        	<td>{{ row.id }}</td>
+	        	<td>{{ row.userId }}</td>
+	        	<td>{{ row.title }}</td>
+	        	<td>{{ row.body }}</td>
+        	</tr>
+        </table>
+      </div>
+
+      
